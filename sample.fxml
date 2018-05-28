@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="328.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TFBS_finder.Controller">
+   <children>
+      <AnchorPane prefHeight="357.0" prefWidth="609.0">
+         <children>
+            <VBox layoutX="14.0" layoutY="27.0" />
+            <TextArea fx:id="myTextArea" layoutX="29.0" layoutY="101.0" prefHeight="198.0" prefWidth="552.0" />
+            <Label layoutX="39.0" layoutY="75.0" prefHeight="16.0" prefWidth="512.0" text="Start      Stop       Matched sequence       Start       Stop      Name" textFill="#000000b2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <AnchorPane layoutX="21.0" layoutY="15.0" onDragDropped="#dropping_FIMO" onDragOver="#draggingOver" prefHeight="44.0" prefWidth="119.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="5.0" prefHeight="32.0" prefWidth="77.0" text="FIMO file">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fimo_label" layoutX="14.0" layoutY="-3.0" prefHeight="44.0" prefWidth="26.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="152.0" layoutY="15.0" onDragDropped="#dropping_GenBank" onDragOver="#draggingOver" prefHeight="44.0" prefWidth="153.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="5.0" prefHeight="32.0" prefWidth="101.0" text="GenBank file">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genbank_label" layoutX="14.0" layoutY="-3.0" prefHeight="44.0" prefWidth="26.0" text="+">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="39.0" layoutY="59.0" prefHeight="16.0" prefWidth="473.0" text="TFBS      TFBS                                            Gene       Gene     Gene" textFill="#000000b3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="476.0" layoutY="15.0" onMouseClicked="#reset" prefHeight="44.0" prefWidth="101.0">
+               <children>
+                  <Label layoutX="44.0" layoutY="5.0" prefHeight="32.0" prefWidth="61.0" text="Reset">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genbank_label1" layoutX="14.0" layoutY="-3.0" prefHeight="44.0" prefWidth="26.0" text="=">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
