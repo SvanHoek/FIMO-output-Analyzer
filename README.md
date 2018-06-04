@@ -1,4 +1,4 @@
-# FIMO-output-Analyzer
+# TFBS_Analyzer
 This is a program I wrote to automate part of an assignment, this repository is for documentation purposes.
 
 The program makes a selection from the possible TFBS from a FIMO output file.
