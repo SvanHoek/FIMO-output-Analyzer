@@ -82,7 +82,7 @@ public class Controller {
             fis.close();
             String temp = builder.toString();
             if (file_type.equals("FIMO")){
-                if (temp.startsWith("# motif_id\tmotif_alt_id")){
+                if (temp.startsWith("motif_id\tmotif_alt_id")){ //"# motif_id\tmotif_alt_id" has to be used for FIMO ver <5.0.0
                     this.FIMO_file = true;
                     this.FIMO_text = temp;
                     fimo_label.setTextFill(Color.LIMEGREEN);
