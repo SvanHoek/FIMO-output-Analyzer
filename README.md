@@ -1,7 +1,7 @@
 # TFBS_Analyzer
 This is a program I wrote to automate part of an assignment, this repository is for documentation purposes.
 
-The program makes a selection from the possible TFBS from a FIMO output file.
+The program makes a selection from the possible TFBS from a FIMO tvs file.
 It does this by comparing the positions of the TFBS with the positions of genes to filter out TFBS that overlap with or are further than 300 bp removed from a gene. The program uses a GenBank file to get the positions and names of the genes.
 
 # How to use:
