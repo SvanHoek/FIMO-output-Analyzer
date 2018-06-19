@@ -15,7 +15,7 @@ public class Find_TFBS {
         String[] FIMO_array = FIMO_text.split("\n");
         String[] temp_array;
         for (int i = 1 ; i < FIMO_array.length ; i++) {
-            temp_array = FIMO_array[i].substring(14).split("\t");
+            temp_array = FIMO_array[i].substring(15).split("\t");// 14 has to be used for FIMO ver <5.0.0
             if(this.not_in_gene(temp_array)){
                 this.close_to_gene(temp_array);
             }
